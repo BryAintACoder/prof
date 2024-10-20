@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* BACKGROUND TO SA LEFT SIDE AH */
+.background-message {
+    background-image: url('../img/logo1.png');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica World', sans-serif; 
+}
+
+
+/* REG FORM PART (RIGHT SIDE) */
+.message-container {
+    position: fixed;
+    top: 130px; /* Adjust as needed */
+    left:992px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    width: 670px;
+}
+.card {
+    background-color: transparent; 
+}
+
+.card-header {
+    color: white;
+    font-weight: bolder;
+    text-align:center;
+}
+.card-header h1{
+    font-weight: bold;
+}
+.body-reg{
+    margin-top:100px;
+}
+.registration-form {
+    width: 80%; 
+    padding: 30px;
+    background-color: #2D7A41; 
+}
+.registration-form label {
+    font-weight: bold;
+    color: white;
+    margin-left: 250px;
+}
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form select {
+    border-radius: 20px; 
+    padding: 8px 12px; 
+    margin-bottom: 10px; 
+    width: 60%; /* Adjust the width as needed */
+    box-sizing: border-box; 
+    margin-left: 250px;
+}
+
+
+/* BUTTON LANG */
+
+.btn-primary {
+    background-color: #F4CC1D;
+    border-color: #28a745;
+    border-radius: 20px;
+    padding: 10px 125px;
+    color: green;
+    margin-left: 470px;
+    margin-bottom:478px;
+    margin-top:20px ;
+    border-color: #2D7A41;
+}
+
+.btn-primary:hover {
+    background-color: #87892e;
+    border-color: #1e7e34;
+}
+.sign-up-buttons {
+    display: flex;
+    align-items: center;
+}
+.nope{
+   margin-left:255px;
+   margin-right:-299px;
+   text-decoration: underline;
+   color: #F4CC1D;
+   margin-top:-450px ;
+   font-weight: bold;
+}
+.nope:hover{
+    color: white;
+ }
+.text-center{
+    color: #FFDE00;
+    font-weight: bold;
+}
+
+
+
+/* BUTTON LANG LEFT SIDEEEEEEEEEEE*/
+
+.btn-primary1 {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-color: #2C7A3F;
+    color: green;
+    margin-top: 750px;
+    border-radius: 20px;
+    padding: 20px 100px;
+    border-width: 3px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-primary1:hover {
+    background-color: #ffffff;
+    border-color: #1e7e34;
+}

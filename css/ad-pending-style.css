@@ -1,0 +1,34 @@
+/* Base button style */
+.btn {
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid;   /* Border with 2px thickness */
+    padding: 10px 20px;  /* Padding inside the button */
+    font-size: 16px;     /* Font size for text */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Approve button (Green border and text) */
+.btn-success {
+    border-color: green;
+    color: green;
+}
+
+/* Decline button (Red border and text) */
+.btn-danger {
+    border-color: red;
+    color: red;
+}
+
+/* Hover effect for Approve button (Green fill and white text) */
+.btn-success:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Hover effect for Decline button (Red fill and white text) */
+.btn-danger:hover {
+    background-color: red;
+    color: white;
+}

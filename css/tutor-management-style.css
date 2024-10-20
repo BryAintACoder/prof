@@ -1,0 +1,285 @@
+/*NAVBAR STYLE*/
+.navbar-custom{
+    background-color: #1d5512;
+    border-bottom: 2px solid #e1e0c2; /* thin bottom navbar color */
+}
+
+.navbar-custom .navbar-brand {
+    color: #e1e0c2; /* Change the ADMIN DASHBOARD font color to white */
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link{
+    color: white;
+    transition: color 0.2s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #f2b41b; /* Hover effect color */
+}
+
+.navbar-custom .nav-link:active,
+.navbar-custom .nav-link.active {
+    color: #f2b41b; /* Active (clicked) state color */
+}
+
+.navbar a {
+    font-family: Helvetica;
+}
+
+.navbar-custom .nav-link, 
+.navbar-custom a {
+    color: white; /* Change nav-link and LOGOUT link font color to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease-in-out; /* Smooth hover effect */
+    margin-right: 20px; /* Add space between links */
+}
+
+.navbar-custom .nav-link:hover, 
+.navbar-custom a:hover {
+    color: #f2b41b; /* Hover effect color */
+}
+
+.navbar-custom .nav-link:active, 
+.navbar-custom .nav-link.active, 
+.navbar-custom a:active {
+    color: #f2b41b; /* Active (clicked) state color */
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+
+/*
+    General Table Style
+*/
+.custom-table thead th {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+
+/*
+    APPROVED TABLE STYLE
+*/
+.approved-table {
+    font-family: Helvetica;
+    text-align: center;
+    border-radius: 20px; /* Round corners */
+    overflow: hidden; /* Rounded corners work well */
+    border-collapse: separate; /* Required for rounded corners */
+    border: 2px solid #006600; /* Border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    border-spacing: 0; /* Remove gaps between cells */
+    margin: 0;
+}
+
+.approved-table td, .approved-table th {
+    border: none; /* Remove borders from all cells */
+    padding: 10px; /* Cell padding */
+}
+
+.approved-table thead tr.title-row th {
+    font-size: 1.6em; /* Title row font size */
+    font-weight: bold; /* Bold text */
+    background-color: #006600; /* Title row background color */
+    color: white; /* Title row text color */
+    padding: 15px; /* Title row padding */
+    text-align: center; /* Center text */
+    border-bottom: 2px solid #e1e0c2; /* Bottom border */
+    border-top-left-radius: 15px; /* Round top-left corner */
+    border-top-right-radius: 15px; /* Round top-right corner */
+}
+
+.approved-table thead th.title-row:first-child {
+    border-top-left-radius: 15px; /* Round top-left corner of the first cell */
+}
+
+.approved-table thead th.title-row:last-child {
+    border-top-right-radius: 15px; /* Round top-right corner of the last cell */
+}
+
+.approved-table thead th:not(.title-row) {
+    font-size: 0.9em; /* Header font size */
+    font-weight: bold; /* Bold text */
+    background-color: #DDF2D1; /* Header background color */
+    color: #2b2b2b; /* Header text color */
+    text-align: center;
+    border-radius: 0; /* No rounded corners */
+}
+
+.approved-table thead tr:first-child th {
+    background-color: #006600; /* Header row background color */
+    color: white; /* Header row text color */
+}
+
+.approved-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Odd row color */
+}
+
+.approved-table tbody tr:nth-child(even) {
+    background-color: #DDF2D1; /* Even row color */
+}
+
+.approved-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.approved-table {
+    margin-bottom: 40px; /* Space between tables */
+}
+
+/*
+    BUTTONS STYLE
+*/
+.approved-table .btn {
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid; /* Border thickness */
+    padding: 9px 10px; /* Button padding */
+    font-family: Helvetica;
+    font-size: 13px; /* Font size */
+    font-weight: bold;
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+    margin-bottom: 5px;
+    min-width: 100px; /* Minimum button width */
+    text-align: center; /* Center text */
+    height: 40px; /* Button height */
+}
+
+.approved-table .btn-danger {
+    border-color: #722410; /* Decline button border color */
+    color: #722410; /* Decline button text color */
+}
+
+.approved-table .btn-danger:hover {
+    background-color: #722410; /* Decline button background color on hover */
+    color: white; /* Decline button text color on hover */
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+
+/*
+    DECLINED TABLE STYLE
+*/
+.declined-table {
+    font-family: Helvetica;
+    text-align: center;
+    border-radius: 20px; /* Round corners */
+    overflow: hidden; /* Rounded corners work well */
+    border-collapse: separate; /* Required for rounded corners */
+    border: 2px solid #722410; /* Border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    border-spacing: 0; /* Remove gaps between cells */
+    margin: 0;
+}
+
+.declined-table td, .declined-table th {
+    border: none; /* Remove borders from all cells */
+    padding: 10px; /* Cell padding */
+}
+
+.declined-table thead tr.title-row th {
+    font-size: 1.6em; /* Title row font size */
+    font-weight: bold; /* Bold text */
+    background-color: #722410; /* Title row background color */
+    color: white; /* Title row text color */
+    padding: 15px; /* Title row padding */
+    text-align: center; /* Center text */
+    border-bottom: 2px solid #e1e0c2; /* Bottom border */
+    border-top-left-radius: 15px; /* Round top-left corner */
+    border-top-right-radius: 15px; /* Round top-right corner */
+}
+
+.declined-table thead th.title-row:first-child {
+    border-top-left-radius: 15px; /* Round top-left corner of the first cell */
+}
+
+.declined-table thead th.title-row:last-child {
+    border-top-right-radius: 15px; /* Round top-right corner of the last cell */
+}
+
+.declined-table thead th:not(.title-row) {
+    font-size: 0.9em; /* Header font size */
+    font-weight: bold; /* Bold text */
+    background-color: #fdaaaa; /* Header background color */
+    color: #2b2b2b; /* Header text color */
+    text-align: center;
+    border-radius: 0; /* No rounded corners */
+}
+
+.declined-table thead tr:first-child th {
+    background-color: #722410; /* Header row background color */
+    color: white; /* Header row text color */
+}
+
+.declined-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Odd row color */
+}
+
+.declined-table tbody tr:nth-child(even) {
+    background-color: #fdaaaa; /* Even row color */
+}
+
+.declined-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.declined-table {
+    margin-bottom: 40px; /* Space between tables */
+}
+
+/*
+    BUTTONS STYLE
+*/
+.declined-table .btn {
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid; /* Border thickness */
+    padding: 9px 10px; /* Button padding */
+    font-family: Helvetica;
+    font-size: 13px; /* Font size */
+    font-weight: bold;
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+    margin-bottom: 5px;
+    min-width: 100px; /* Minimum button width */
+    text-align: center; /* Center text */
+    height: 40px; /* Button height */
+}
+
+.declined-table .btn-danger {
+    border-color: #722410; /* Decline button border color */
+    color: #722410; /* Decline button text color */
+}
+
+.declined-table .btn-danger:hover {
+    background-color: #722410; /* Decline button background color on hover */
+    color: white; /* Decline button text color on hover */
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+

@@ -1,0 +1,182 @@
+/*NAVBAR STYLE*/
+.navbar-custom{
+    background-color: #1d5512;
+    border-bottom: 2px solid #e1e0c2; /* thin bottom navbar color */
+}
+
+.navbar-custom .navbar-brand {
+    color: #e1e0c2; /* Change the ADMIN DASHBOARD font color to white */
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link{
+    color: white;
+    transition: color 0.2s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #f2b41b; /* Hover effect color */
+}
+
+.navbar-custom .nav-link:active,
+.navbar-custom .nav-link.active {
+    color: #f2b41b; /* Active (clicked) state color */
+}
+
+.navbar a {
+    font-family: Helvetica;
+}
+
+.navbar-custom .nav-link, 
+.navbar-custom a {
+    color: white; /* Change nav-link and LOGOUT link font color to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease-in-out; /* Smooth hover effect */
+    margin-right: 20px; /* Add space between links */
+}
+
+.navbar-custom .nav-link:hover, 
+.navbar-custom a:hover {
+    color: #f2b41b; /* Hover effect color */
+}
+
+.navbar-custom .nav-link:active, 
+.navbar-custom .nav-link.active, 
+.navbar-custom a:active {
+    color: #f2b41b; /* Active (clicked) state color */
+}
+
+/* Container that holds the table */
+.container {
+    margin-top: 20px; /* Adds spacing between the navbar and the table */
+}
+
+/*
+    General Table Style
+*/
+.custom-table thead th {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/*TABLE BODY STYLE*/
+
+/*TABLE ROWS STYLE*/
+.custom-table {
+    font-family: Helvetica;
+    text-align: center;
+    border-radius: 20px; /* Adjust the radius to control the roundness */
+    overflow: hidden; /* Ensures that rounded corners work well */
+    border-collapse: separate; /* Required for rounded corners */
+    border: 2px solid #a58f17; /* Add a border around the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box-shadow for effect */
+    border-spacing: 0; /* Remove any gaps between cells */
+    margin: 0;
+}
+
+/* Remove borders from table cells */
+.custom-table td, .custom-table th {
+    border: none; /* Remove borders from all cells */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Style for the table title row */
+.custom-table thead tr.title-row th {
+    font-size: 1.6em; /* Increase font size for the title row */
+    font-weight: bold; /* Make the text bold */
+    background-color: #a58f17; /* Background color for title row */
+    color: white; /* Text color for title row */
+    padding: 15px; /* Increase padding for more space */
+    text-align: center; /* Center align the text */
+    border-bottom: 2px solid #e1e0c2; /* Optional: Add a border for separation */
+    border-top-left-radius: 15px; /* Round top-left corner */
+    border-top-right-radius: 15px; /* Round top-right corner */
+}
+
+/* Ensure the first and last header cells have rounded corners in title row only */
+.custom-table thead th.title-row:first-child {
+    border-top-left-radius: 15px; /* Round top-left corner of the first header cell in title row */
+}
+
+.custom-table thead th.title-row:last-child {
+    border-top-right-radius: 15px; /* Round top-right corner of the last header cell in title row */
+}
+
+/* Style for table headers */
+.custom-table thead th:not(.title-row) {
+    font-size: 0.9em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    background-color: #fffee0; /* Header background color */
+    color: #2b2b2b; /* Header text color */
+    text-align: center;
+    border-radius: 0; /* Ensure no rounded corners for column headers */
+}
+
+/* Style for header row with merged color effect */
+.custom-table thead tr:first-child th {
+    background-color: #a58f17; /* Background color for header row */
+    color: white; /* Text color */
+}
+
+/* Style for table body rows */
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #fffee0; /* Light color for even rows */
+}
+
+/* Style for table rows on hover */
+.custom-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+.custom-table {
+    margin-bottom: 40px; /* Adjust this value for the space you want between tables */
+}
+
+/*BUTTONS STYLE*/
+/* Base button style */
+.custom-table .btn {
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid;   /* Border with 2px thickness */
+    padding: 9px 10px;  /* Padding inside the button */
+    font-family: Helvetica;
+    font-size: 13px;     /* Font size for text */
+    font-weight: bold;
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 5px;
+    min-width: 100px; /* Set a minimum width for buttons */
+    text-align: center; /* Center the text inside the button */
+}
+
+/* Approve button (Green border and text) */
+.custom-table .btn-success {
+    border-color: #006600;
+    color: #006600;
+}
+
+/* Decline button (Red border and text) */
+.custom-table .btn-danger {
+    border-color: #722410;
+    color: #722410;
+}
+
+/* Hover effect for Approve button (Green fill and white text) */
+.custom-table .btn-success:hover {
+    background-color: #006600;
+    color: white;
+}
+
+/* Hover effect for Decline button (Red fill and white text) */
+.custom-table .btn-danger:hover {
+    background-color: #722410;
+    color: white;
+}
+
+/* Ensure all buttons have the same height */
+.custom-table .btn {
+    height: 40px; /* Adjust height as needed */
+}

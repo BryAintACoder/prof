@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 15px; /* adjust this value as needed */
+}
+
+.bg-green {
+    background-color: green;
+}
+.navbar-green .navbar-brand, .navbar-green .nav-link {
+    color: white;
+}
+.user-dropdown {
+    margin-left: 150px;
+}
+.dropdown-menu {
+    margin-top: 0;
+}
+#userDropdown .dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+}
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  width: 60%;
+  margin-left: 20%;
+}
+th:first-child, td:first-child {
+ width: 10%; /* Change the width property here */
+}
+
+th:nth-child(2), td:nth-child(2) {
+ width: 10%; /* Change the width property here */
+}
+.btn-primary{
+  float: right;
+}
+.btn-secondary{
+  float: right;
+}
+.s-header {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  margin-top: 30px;
+}
+.customcard{
+  position:absolute;
+  margin-left: 30%;
+  width: 18rem; 
+}
+
+
+
+
+
+
+
